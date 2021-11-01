@@ -30,7 +30,7 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void addCity( City c) {
-        return;
+        cities.add(c);
     }
 
 
