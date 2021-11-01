@@ -33,6 +33,9 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(c);
     }
 
+    public boolean hasCity(City c) {
+        return false;
+    }
 
     @NonNull
     @Override
