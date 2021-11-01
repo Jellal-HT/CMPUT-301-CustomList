@@ -34,7 +34,12 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void deleteCity(City c) {
-        return;
+        if (hasCity(c)) {
+            cities.remove(c);
+        }
+        else {
+            throw new IllegalArgumentException();
+        }
     }
 
     public boolean hasCity(City c) {
