@@ -33,6 +33,10 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(c);
     }
 
+    public void deleteCity(City c) {
+        return;
+    }
+
     public boolean hasCity(City c) {
         return cities.contains(c);
     }
