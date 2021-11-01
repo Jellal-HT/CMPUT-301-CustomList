@@ -21,9 +21,9 @@ public class CustomListTest {
     @Test
     public void addCity() {
         City c = new City("Edmonton", "AB");
-        int size = list.getCount();
+        int size = list.countCities();
         list.addCity(c);
-        assertEquals(size+1, list.getCount());
+        assertEquals(size+1, list.countCities());
     }
 
     @Test
@@ -37,9 +37,9 @@ public class CustomListTest {
     public void deleteCityTest() {
         City c = new City("Edmonton", "AB");
         list.addCity(c);
-        assertEquals(1, list.getCount());
+        assertEquals(1, list.countCities());
         list.deleteCity(c);
-        assertEquals(0, list.getCount());
+        assertEquals(0, list.countCities());
 
     }
 
