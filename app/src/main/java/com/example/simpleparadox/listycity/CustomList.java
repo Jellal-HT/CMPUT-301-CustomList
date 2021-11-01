@@ -34,7 +34,7 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public boolean hasCity(City c) {
-        return false;
+        return cities.contains(c);
     }
 
     @NonNull
